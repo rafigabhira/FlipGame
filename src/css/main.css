@@ -1,0 +1,206 @@
+@import url(http://fonts.googleapis.com/css?family=Tenor+Sans);
+html {
+  font-family: "Tenor Sans", sans-serif;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background: #FFF8DC;
+  position: static;
+	
+}
+
+#home {
+	position: absolute;
+	background: #20B2AA;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 200px;
+	height: 115%;	
+  left: -10px;
+  top: -10px;
+  bottom: 0%;
+
+}
+#userInfo{
+  position: relative;
+  background-color: #FFF8DC;
+  text-align: center;
+  border-style: solid;
+  width: 120px;
+  height: 23px;
+  border-radius: 4px;
+  border-color: #FFF8DC;
+  margin: 20px 41px;
+}
+
+.judul {
+	text-align: center;
+	text-shadow: 10px;
+	font: italic bold 35px/20px "Tenor Sans", sans-serif;
+	color: #FFF8DC;
+}
+
+#logout{
+    font: bold 15px "Tenor Sans", sans-serif;
+    margin: 0px 78px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    color:  #B22222; 
+}
+
+#logout:hover{
+  color: #FFF8DC;
+}
+
+#bestScore{
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 11px;
+  margin-right: 2px;
+  border-style: solid;
+  background-color: #FF6347;
+  border-radius: 3px;
+}
+
+#scores {
+  margin-top: -10px;
+  text-align: justify;
+  margin-left: 15px;
+  color: #FFF8DC;
+  
+}
+
+.start {
+
+    position: relative;
+    left: 115px;
+    top: 100px;
+    padding: 7px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    color: #FF6347;
+    border: 3px solid #FF6347;
+    border-radius: 20px;
+    left: -150px;
+    top: 360px;
+    
+
+}
+
+.start:hover {
+	background-color: #FF6347;
+	color: #FFF8DC;
+}
+
+
+.container {
+	position: absolute;
+	width: 70%;
+	height: 100%;
+	width: 600px;
+	right: 30%;
+  left: 35%;
+  top: -10%;
+}
+
+#jam {
+    position: relative;
+    left: -141px;
+    top: 350px;
+    font: italic bold 25px/20px Georgia, serif;
+}
+
+.tiles {
+	margin: 15px auto;
+  	width: 100%;
+  	height: 100%;
+}
+
+li {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+  -webkit-perspective: 800;
+  margin: 10px;
+  padding: 15px;
+}
+
+.tile {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.6s;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+}
+
+.tile-front{
+    position: absolute;
+    height: 102%;
+    width: 102%;
+    -webkit-backface-visibility: hidden;
+    background: #59bab4;
+    background-image: url("animal-marks1.png");
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: -webkit-transform 0.3s;
+    cursor: pointer;
+    border-radius: 8px;
+
+
+ }
+
+.tile-front:hover {
+   	background: #FF6347;
+   	background-image: url("animal-marks1.png");
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-transform: scale(1.1);
+}
+
+.tile-back {
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+	background-color: #FF6347;
+    -webkit-transform: rotateY(180deg);
+    background-position: center;
+    border-radius: 8px;
+}
+
+.tile-back img {
+	width: 100px;
+	height: 100px;
+	margin-left: 15px;
+	margin-top: 15px;
+
+}
+
+.tile.flipped {
+	-webkit-transform: rotateY(180deg);
+}
+
+.disabled {
+ -webkit-transition: 1s;
+ transition: 1s;
+ pointer-events: none;
+ opacity: 0.5;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Game Login !</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="src/js/login.js"></script>
+  <script src="src/js/typed.js"></script>
+  <script>
+        $(function(){
+            $("#typed").typed({
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 30,
+            backDelay: 1500,
+            loop: false,
+            contentType: 'html',
+          });
+      });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="login">
+      <div id="typed-strings">
+          <span><strong>Hello !</strong></span>
+          <p>Play this <strong>Game !</strong></p>
+          <p>And beat the <strong>High Score !</strong></p>
+          <p>Please <strong>Login :)</strong></p>
+      </div>
+          <span id="typed" style="white-space:pre;"></span>
+      <br><br>
+      <form method="post">
+          <input id="form-username" type="text" name="user" placeholder="Username" required="required" class="input-txt" />
+          <input id="form-password" type="password" name="password" placeholder="Password" required="required" class="input-txt" />
+          <div class="login-footer">
+              <button class="btn btn--right" onclick="loadXMLDoc()">Sign in </button>
+          </div>
+      </form>
+  </div>
+</div>
+</body>
+</html>

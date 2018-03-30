@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Games Flip Card</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="src/css/main.css">
+	<script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="src/js/main.js"></script>
+</head>
+<body>
+<div id="home">
+	<br>
+	<h1 class="judul">Hello !</h1>
+	<h3 id="userInfo"></h3>
+	<script>
+		 document.getElementById("userInfo").innerHTML = localStorage.username;
+	</script>
+	<a id="logout" onclick="logout()"><strong>Logout</strong></a>
+	<script>
+		function logout(){
+		alert("Success logging out")
+        window.open("login.html", "_self");
+    }
+	</script>
+	<div id="scoreboard">
+		<h2 id="bestScore">Best Score</h2>
+		<p id="scores"></p>
+	</div>
+</div>
+<div class="container">	
+	<h2 id="jam">00 m : 00 s</h2>
+	<a class="start" onclick="startstoptimer()">Start</a>
+	<ul class="tiles"></ul>
+</div>
+</body>
+</html>
